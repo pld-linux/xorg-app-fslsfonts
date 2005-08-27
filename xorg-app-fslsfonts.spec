@@ -1,5 +1,3 @@
-# $Rev: 3342 $, $Date: 2005-08-27 17:42:47 $
-#
 Summary:	fslsfonts application
 Summary(pl):	Aplikacja fslsfonts
 Name:		xorg-app-fslsfonts
@@ -17,10 +15,7 @@ BuildRequires:	xorg-lib-libFS-devel
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
-BuildRoot:	%{tmpdir}/fslsfonts-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 fslsfonts application.
@@ -28,11 +23,9 @@ fslsfonts application.
 %description -l pl
 Aplikacja fslsfonts.
 
-
 %prep
 %setup -q -n fslsfonts-%{version}
 %patch0 -p1
-
 
 %build
 %{__aclocal}
@@ -43,17 +36,14 @@ Aplikacja fslsfonts.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
