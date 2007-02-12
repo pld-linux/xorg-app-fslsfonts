@@ -1,5 +1,5 @@
 Summary:	fslsfonts application
-Summary(pl):	Aplikacja fslsfonts
+Summary(pl.UTF-8):   Aplikacja fslsfonts
 Name:		xorg-app-fslsfonts
 Version:	1.0.1
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 fslsfonts application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja fslsfonts.
 
 %prep
