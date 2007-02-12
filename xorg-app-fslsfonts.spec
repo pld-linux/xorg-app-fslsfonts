@@ -1,5 +1,5 @@
 Summary:	fslsfonts application
-Summary(pl.UTF-8):   Aplikacja fslsfonts
+Summary(pl.UTF-8):	Aplikacja fslsfonts
 Name:		xorg-app-fslsfonts
 Version:	1.0.1
 Release:	1
