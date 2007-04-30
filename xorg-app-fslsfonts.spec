@@ -1,5 +1,5 @@
-Summary:	fslsfonts application
-Summary(pl.UTF-8):	Aplikacja fslsfonts
+Summary:	fslsfonts application - list fonts served by X font server
+Summary(pl.UTF-8):	Aplikacja fslsfonts - lista fontów udostępnianych przez serwer fontów X
 Name:		xorg-app-fslsfonts
 Version:	1.0.1
 Release:	1
@@ -17,10 +17,12 @@ BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-fslsfonts application.
+fslsfonts application lists the fonts served by X font server and
+matching given pattern.
 
 %description -l pl.UTF-8
-Aplikacja fslsfonts.
+Aplikacja fslsfonts wypisuje listę fontów udostępnianych przez serwer
+fontów X i pasujących do zadanego wzorca.
 
 %prep
 %setup -q -n fslsfonts-%{version}
