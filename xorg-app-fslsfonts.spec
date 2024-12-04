@@ -1,15 +1,17 @@
 Summary:	fslsfonts application - list fonts served by X font server
 Summary(pl.UTF-8):	Aplikacja fslsfonts - lista fontów udostępnianych przez serwer fontów X
 Name:		xorg-app-fslsfonts
-Version:	1.0.6
+Version:	1.0.7
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/app/fslsfonts-%{version}.tar.xz
-# Source0-md5:	7bbde137769c15fd9ada97150720076d
+# Source0-md5:	c99b1e38af6a835b4a52b2721d30dea4
 URL:		https://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.60
+BuildRequires:	autoconf >= 2.70
 BuildRequires:	automake
+# or libbsd (for reallocarray)
+BuildRequires:	glibc-devel >= 6:2.26
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libFS-devel
